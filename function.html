@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function sum (...a){
+
+console.log(a);
+let result =a.reduce((s,n) =>{
+
+return s+n;
+
+},0);
+
+console.log("sum = "+result);
+return result;
+}
+
+sum(11);
+sum(11,22);
+sum(23,56,33);
+
+
+    </script>
+</body>
+</html>

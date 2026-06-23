@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let user ={
+
+name:"ram",
+roll:"41",
+course:"btech",
+address : {
+
+area:"naushad",
+city:"gorakhpur",
+state:"uttar pradesh",
+
+}
+
+
+};
+
+let user1 = user;
+user1.name="ram ashish";
+console.log(user1);
+console.log(user);
+
+
+let user2 ={
+
+    ...user
+};
+
+console.log(user2);
+console.log(user);
+
+user2.address.city="khushinagar";
+console.log(user2);
+console.log(user);
+
+
+
+let temp =JSON.stringify(user);
+let user3 = JSON.parse(temp);
+
+
+user3 .address.city="agra";
+console.log(user3);
+console.log(user);
+
+
+let user4 = structuredClone(user);
+user4.address.city="andhra pradesh";
+console.log(user4);
+console.log(user);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greater() {
+
+            a = document.getElementById("num1");
+            b = document.getElementById("num2");
+            if (parseInt(a.value) > parseInt(b.value))
+                c = a.value;
+
+
+            else
+
+                c = b.value;
+
+            document.getElementById("result").value = c + "is greater";
+
+            a.value = "";
+            b.value = "";
+
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>adiition</h1>
+    <input type="text" id="num1" placeholder="enter the first number">
+    <input type="text" id="num2" placeholder="enter the second number">
+    <input type="text" id="result">
+
+
+    <button onclick="greater()">sdfsddsfds</button>
+</body>
+
+</html>

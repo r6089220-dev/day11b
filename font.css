@@ -1,0 +1,26 @@
+@font-face{
+
+
+    font-family:"google-cursive" ;
+    src: url("c:\Users\student\Downloads\krutidev-010-hindi-font-download.ttf");
+}
+
+h1{
+/*
+    font-family:dev ;
+    word-spacing: 50px;
+*/
+border: 20px solid red;
+box-shadow: 0px -10px 5px gray;
+text-shadow: 3px 3px 3px red ;
+
+}
+
+div{
+
+font-size:2em ;
+font-family: "google-cursive";
+text-transform: capitalize;
+letter-spacing: 10px;
+line-height: 50px;
+}
